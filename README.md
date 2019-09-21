@@ -15,7 +15,6 @@ Development:
 Usage:  
 Assume home page will redirect to sign in page automatically.  
 Assume requesting API will be half of second.  
-&nbsp;  
 - Go to http://localhost:3000 to sign in.
 - Use 'test@gmail.com/123' to sign in OR open ./src/data/db.json file to pick up another user.
 - Enter email and password which are required.
