@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import Header from './header';
+import { SIGN_IN_PATH } from '../constants/constant';
 
 class Home extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Home extends Component {
                 <div className="container"></div>
             ]
         } else {
-            return <Redirect to='/signIn' />
+            return <Redirect to={SIGN_IN_PATH} />
         }
     }
 }

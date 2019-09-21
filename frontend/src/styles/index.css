@@ -160,3 +160,11 @@ code {
 .invalid-feedback {
   display: inline;
 }
+
+.btn-center {
+  text-align: center;
+}
+
+.btn-big {
+  width: 50%;
+}

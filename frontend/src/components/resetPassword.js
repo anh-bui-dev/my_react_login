@@ -4,7 +4,7 @@ import Popup from './popup';
 import Loading from './loading';
 import axios from 'axios';
 import { Link } from "react-router-dom";
-import { URL } from '../constants/constant';
+import { URL, SIGN_IN_PATH } from '../constants/constant';
 import { validEmail } from '../js/utils.js'
 
 class ResetPassword extends Component {
@@ -73,7 +73,7 @@ class ResetPassword extends Component {
                             // Redirect to sign in page
                             setTimeout(() => {
                                 this.refs.popup.handlePopup();
-                                window.location = "/signIn";
+                                window.location = SIGN_IN_PATH;
                             }, 3000);
                         }).catch(error => {
                             // Catch error here
@@ -161,19 +161,19 @@ class ResetPassword extends Component {
                             </div>
                         </div>
                         <div className="div-responsive">
-                            <Link to="/signIn" className="customLink">Sign In</Link>
+                            <Link to={SIGN_IN_PATH} className="customLink">Sign In</Link>
                         </div>
                         <div className="alert-box div-responsive">
                             {
                                 (error != null && error.message != null) && <Error message={error.message} />
                             }
                         </div>
-                        <div className="div-responsive">
+                        <div className="div-responsive btn-center">
                             <button type="submit" className="btn btn-secondary btn-big">Save</button>
                         </div>
                     </form>
                 </div>
-                <Popup ref="popup" message="Your password is reset" redirect="/signIn" />
+                <Popup ref="popup" message="Your password is reset" redirect={SIGN_IN_PATH} />
                 <Loading ref="loading" />
             </div>
         )

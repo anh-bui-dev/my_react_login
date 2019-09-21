@@ -3,10 +3,10 @@ import {
   BrowserRouter as Router,
   Route
 } from "react-router-dom";
-import moment from 'moment';
 import Home from './components/home';
 import SignIn from './components/signIn';
 import ResetPassword from './components/resetPassword';
+import { HOME_PATH, SIGN_IN_PATH, RESET_PASSWORD_PATH } from './constants/constant';
 
 class App extends Component {
   componentWillMount() {
@@ -28,9 +28,9 @@ class App extends Component {
     return (
       <div id="app">
         <Router>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/signIn" component={SignIn} />
-          <Route exact path="/resetPassword" component={ResetPassword} />
+          <Route exact path={HOME_PATH} component={Home} />
+          <Route exact path={SIGN_IN_PATH} component={SignIn} />
+          <Route exact path={RESET_PASSWORD_PATH} component={ResetPassword} />
         </Router>
       </div>
     )

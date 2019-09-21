@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HOME_PATH } from '../constants/constant';
 
 class Header extends Component {
     constructor(props) {
@@ -9,7 +10,7 @@ class Header extends Component {
     handleSignOut(e) {
         e.preventDefault();
         sessionStorage.removeItem('user');
-        window.location = "/";
+        window.location = HOME_PATH;
     }
 
     render() {

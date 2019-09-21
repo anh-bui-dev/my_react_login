@@ -5,7 +5,7 @@ import Loading from './loading';
 import axios from 'axios';
 import moment from 'moment';
 import { Link } from "react-router-dom";
-import { URL } from '../constants/constant';
+import { URL, HOME_PATH, RESET_PASSWORD_PATH } from '../constants/constant';
 import { validEmail } from '../js/utils.js'
 
 class SignIn extends Component {
@@ -70,7 +70,7 @@ class SignIn extends Component {
                             // Redirect to home page
                             setTimeout(() => {
                                 this.refs.popup.handlePopup();
-                                window.location = "/";
+                                window.location = HOME_PATH;
                             }, 3000);
                         } else {
                             this.setState({
@@ -113,7 +113,7 @@ class SignIn extends Component {
     }
 
     render() {
-        const { submitted, email, password, error, isLogged, user } = this.state;
+        const { submitted, email, password, error } = this.state;
         return (
             <div className="container">
                 <div className="login">
@@ -139,19 +139,19 @@ class SignIn extends Component {
                             </div>
                         </div>
                         <div className="div-responsive">
-                            <Link to="/resetPassword" className="customLink">Want to reset password ?</Link>
+                            <Link to={RESET_PASSWORD_PATH} className="customLink">Want to reset password ?</Link>
                         </div>
                         <div className="alert-box div-responsive">
                             {
                                 (error != null && error.message != null) && <Error message={error.message} />
                             }
                         </div>
-                        <div className="div-responsive">
+                        <div className="div-responsive btn-center">
                             <button type="submit" className="btn btn-secondary btn-big">Sign In</button>
                         </div>
                     </form>
                 </div>
-                <Popup ref="popup" message="Logged In" redirect="/" />
+                <Popup ref="popup" message="Logged In" redirect={HOME_PATH} />
                 <Loading ref="loading" />
             </div>
         )
