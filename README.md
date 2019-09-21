@@ -1,6 +1,6 @@
 Simple login without authentication
 
-Setup
+Setup:
 - Install npm
 
 - React frontend:
@@ -10,14 +10,14 @@ Setup
     * Open new cmd and run: npm run start
 
 
-Development
+Development:
 - React frontend: http://localhost:3000
 - Json server: http://localhost:4000
 
 
-Usage
-Assume home page will redirect to sign in page automatically.
-Assume requesting API will be half of second.
+Usage:  
+Assume home page will redirect to sign in page automatically.  
+Assume requesting API will be half of second.  
 
 - Go to http://localhost:3000 to sign in.
 - Use 'test@gmail.com/123' to sign in OR open ./src/data/db.json file to pick up another user.
@@ -27,7 +27,11 @@ Assume requesting API will be half of second.
     * Success: Message box will show.
     * Error: Alert will show.
 - Click on Close or X button to close the message box and redirect to home page.
-- After 3s, redirect to home page.
+- After 3s, redirect to home page.  
+
+- In home page, click on the name of user on the top right to show the dropdown menu.
+- Click on Sign out.
+- Redirect to Sign in page.  
 
 - Click on 'Want to reset password' link to redirect to reset password page.
 - Enter email, new password and confirm password which are required.
@@ -36,5 +40,5 @@ Assume requesting API will be half of second.
 - Click on Save button:
     * Success: Message box will show.
     * Error: Alert will show.
-- Click on Close or X button to close the message box and redirect to sign in page.
-- After 3s, redirect to sign in page.
+- Click on Close or X button to close the message box and redirect to Sign in page.
+- After 3s, redirect to Sign in page.
