@@ -34,8 +34,8 @@ Assume requesting API will be half of second.
 - In home page, click on the name of user on the top right to show the dropdown menu.
 - Click on Sign out.
 - Redirect to Sign in page.  
-     
-     
+&nbsp;  
+&nbsp;  
 - Click on 'Want to reset password' link to redirect to reset password page.
 - Enter email, new password and confirm password which are required.
 - Email must be valid and exist on db.json.
