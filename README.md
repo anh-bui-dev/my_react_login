@@ -7,13 +7,11 @@ Setup:
     * Open new cmd and run: npm install
     * Open new cmd and run: npm run mock:api
     * Open new cmd and run: npm run start
-&nbsp;  
-&nbsp;  
+
 Development:
 - React frontend: http://localhost:3000
 - Json server: http://localhost:4000
-&nbsp;  
-&nbsp;  
+
 Usage:  
 Assume home page will redirect to sign in page automatically.  
 Assume requesting API will be half of second.  
