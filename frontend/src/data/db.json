@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "email": "bnkdanh@gmail.com",
+      "password": "123",
+      "name": "Jimmy Bui",
+      "id": 0
+    },
+    {
+      "email": "mark@gmail.com",
+      "password": "123",
+      "name": "Mark",
+      "id": 1
+    },
+    {
+      "email": "felix@gmail.com",
+      "password": "123",
+      "name": "Felix",
+      "id": 2
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "123",
+      "name": "Test",
+      "id": 3
+    }
+  ],
+  "login": [
+    {
+      "token": "QpwL5tke4Pnpja7X4"
+    }
+  ]
+}

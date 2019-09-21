@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#app {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 1.1vw;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  top: 10%;
+}
+
+.login {
+  position: absolute;
+  width: 30%;
+  height: 60%;
+  left: 35%;
+}
+
+.login h2 {
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  top: 5%;
+}
+
+.info {
+  position: absolute;
+  left: 75%;
+}
+
+.info .dropdown-item {
+  font-size: 1.1vw;
+}
+
+.info .dropdown a:hover {
+  text-decoration: none;
+}
+
+.modal-open .modal {
+  overflow-y: hidden !important;
+  display: block;
+}
+
+.modal .modal-dialog {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal .modal-content {
+  font-size: 1.1vw;
+  position: relative;
+  overflow: hidden;
+  top: 20%;
+}
+
+.modal .modal-body {
+  overflow-y: auto;
+}
+
+.modal .modal-title {
+  text-align: center;
+  width: 100%;
+}
+
+.modal .modal-title h4 {
+  font-size: 1.3rem;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.div-responsive {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 1%;
+}
+
+.modal .table-responsive {
+  overflow-x: hidden;
+}
+
+.modal .table {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.modal textarea {
+  font-size: 1.1vw;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  left: 0%;
+}
+
+.loading .spinner-grow {
+  width: 10rem;
+  height: 10rem;
+}
+
+.noresize {
+  resize: none; 
+}
+
+.alert-box {
+  min-height: 4.5rem;
+}
+
+.alert-dismissible {
+  padding-right: 0;
+}
+
+.alert-field {
+  min-height: 1.5rem;
+  margin-top: .5rem;
+}
+
+.invalid-feedback {
+  display: inline;
+}
